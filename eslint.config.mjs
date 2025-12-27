@@ -15,6 +15,12 @@ const eslintConfig = defineConfig([
     "next-env.d.ts",
   ]),
   {
+    files: ["prisma.config.ts"],
+    rules: {
+      "simple-import-sort/imports": "off",
+    },
+  },
+  {
     plugins: {
       "simple-import-sort": simpleImportSort,
     },
